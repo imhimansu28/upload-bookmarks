@@ -2,12 +2,6 @@
 
 << What does this project do >>
 
-## Problem statement
-
-- << ______ >>
-- is a problem for << ------ >>
-- because << --------- >>.
-
 
 ## Getting the local server running
 
