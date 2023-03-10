@@ -2,7 +2,7 @@ django==4.0.4
 uwsgi==2.0.20
 ipython==8.2.0
 mysqlclient==2.1.0
-sqlparse==0.4.2
+sqlparse==0.4.3
 pymemcache==3.5.2
 
 # 12-factor security
