@@ -54,7 +54,7 @@ multidict==6.0.2
     # via
     #   aiohttp
     #   yarl
-mysqlclient==2.1.0
+mysqlclient==2.1.1
     # via -r requirements.in
 parso==0.8.3
     # via jedi
