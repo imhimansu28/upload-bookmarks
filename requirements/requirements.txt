@@ -70,16 +70,14 @@ pure-eval==0.2.2
     # via stack-data
 pygments==2.12.0
     # via ipython
-pymemcache==3.5.2
+pymemcache==4.0.0
     # via -r requirements.in
 pytz==2022.1
     # via -r requirements.in
 requests==2.27.1
     # via geoip2
 six==1.16.0
-    # via
-    #   asttokens
-    #   pymemcache
+    # via asttokens
 sqlparse==0.4.2
     # via
     #   -r requirements.in
