@@ -94,7 +94,7 @@ urllib3==1.26.9
     # via
     #   geoip2
     #   requests
-uwsgi==2.0.20
+uwsgi==2.0.21
     # via -r requirements.in
 wcwidth==0.2.5
     # via prompt-toolkit
