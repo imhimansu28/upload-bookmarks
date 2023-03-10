@@ -1,6 +1,6 @@
 django==4.0.10
 uwsgi==2.0.21
-ipython==8.2.0
+ipython==8.11.0
 mysqlclient==2.1.1
 sqlparse==0.4.2
 pymemcache==4.0.0
