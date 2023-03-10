@@ -1,6 +1,6 @@
 # About tasksmanager
 
-<< What does this project do >>
+### What does this project do
 
 
 ## Getting the local server running
