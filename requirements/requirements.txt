@@ -72,7 +72,7 @@ pygments==2.12.0
     # via ipython
 pymemcache==4.0.0
     # via -r requirements.in
-pytz==2022.1
+pytz==2022.7.1
     # via -r requirements.in
 requests==2.27.1
     # via geoip2
