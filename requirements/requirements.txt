@@ -42,7 +42,7 @@ idna==3.3
     # via
     #   requests
     #   yarl
-ipython==8.2.0
+ipython==8.11.0
     # via -r requirements.in
 jedi==0.18.1
     # via ipython
@@ -62,7 +62,7 @@ pexpect==4.8.0
     # via ipython
 pickleshare==0.7.5
     # via ipython
-prompt-toolkit==3.0.29
+prompt-toolkit==3.0.38
     # via ipython
 ptyprocess==0.7.0
     # via pexpect
@@ -98,6 +98,3 @@ wcwidth==0.2.5
     # via prompt-toolkit
 yarl==1.7.2
     # via aiohttp
-
-# The following packages are considered to be unsafe in a requirements file:
-# setuptools
