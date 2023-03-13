@@ -22,3 +22,4 @@ tmp
 db.sqlite3
 
 .venv
+.temp
