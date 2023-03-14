@@ -20,6 +20,16 @@
   </head>
 
   <body>
+    <div id="loading">
+      <div id="loading-center"></div>
+    </div>
+    <div class"wrapper">
+    {% include 'parts/side-nav.html' %}
+    {% include 'parts/top-nav.html' %}
+    {% block content %}
+        
+    {% endblock content %}
+    </div>
     <script src="{% static 'js/backend-bundle.min.js' %}"></script>
 
     <!--  Flextree -->
