@@ -60,6 +60,7 @@ INSTALLED_APPS = [
     "django.contrib.sitemaps",
     "django.contrib.humanize",
     "bookmark",
+    "accounts",
 ]
 
 MIDDLEWARE = [
