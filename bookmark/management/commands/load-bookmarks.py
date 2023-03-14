@@ -25,5 +25,5 @@ class Command(BaseCommand):
     help = "Fetch bookmark  from json file "
 
     def handle(self, *args, **options):
-        filename = "temp/data/chrome_bookmarks.json"
+        filename = "tmp/data/chrome_bookmarks.json"
         save_bookmark_data(filename)

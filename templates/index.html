@@ -1,18 +1,53 @@
-{% load static %}
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Backend CSS -->
+    <link rel="stylesheet" href="{% static 'css/backend.css' %}" />
 
-    <title>{% block title %}tasksmanager{% endblock %}</title>
+    <!-- line-awesome CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/line-awesome/dist/line-awesome/css/line-awesome.min.css' %}"
+    />
 
-    <link rel="stylesheet" href="{% static 'css/style.css' %}" />
+    <!-- remixicon CSS -->
+    <link
+      rel="stylesheet"
+      href="{% static 'vendor/remixicon/fonts/remixicon.css' %}"
+    />
+    <link rel="shortcut icon" href="{% static 'images/favicon.ico' %}" />
   </head>
+
   <body>
-    {% block content %}
-    <h1>Start Building</h1>
-    {% endblock %}
+    <script src="{% static 'js/backend-bundle.min.js' %}"></script>
+
+    <!--  Flextree -->
+    <script src="{% static 'js/flex-tree.min.js' %}"></script>
+    <script src="{% static 'js/tree.js' %}"></script>
+
+    <!-- Table Treeview Javascript -->
+    <script src="{% static 'js/table-treeview.js' %}"></script>
+
+    <!-- Masonary Javascript -->
+    <script src="{% static 'js/masonry.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+
+    <!-- SweetAlert Javascript -->
+    <script src="{% static 'js/sweetalert.js' %}"></script>
+
+    <!-- Vectoe Map Javascript -->
+
+    <!--  Customizer Javascript  -->
+    <script src="{% static 'js/customizer.js' %}"></script>
+
+    <!-- Chart Custom JavaScript -->
+    <script src="{% static 'js/chart-custom.js' %}"></script>
+
+    <!-- Slider JavaScript -->
+    <script src="{% static 'js/slider.js' %}"></script>
+
+    <!-- App JavaScript -->
+    <script src="{% static 'js/app.js' %}"></script>
   </body>
 </html>
