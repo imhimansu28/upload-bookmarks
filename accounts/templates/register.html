@@ -13,81 +13,54 @@
                 <div class="col-lg-6 bg-primary content-left">
                   <div class="p-3">
                     <h2 class="mb-2 text-white">Sign Up</h2>
-                    <p>Create your Webkit account.</p>
-                    <form>
+                    <p>Create your account.</p>
+
+                    <form method="post">
+                      {% csrf_token %}
+                      <p>{{forms.error}}</p>
                       <div class="row">
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                           <div class="floating-label form-group">
                             <input
                               class="floating-input form-control"
                               type="text"
-                              placeholder=" "
+                              name="username"
+                              id="username_id"
+                              placeholder="UserName"
                             />
-                            <label>Full Name</label>
                           </div>
                         </div>
-                        <div class="col-lg-6">
-                          <div class="floating-label form-group">
-                            <input
-                              class="floating-input form-control"
-                              type="text"
-                              placeholder=" "
-                            />
-                            <label>Last Name</label>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
+                        <div class="col-lg-12">
                           <div class="floating-label form-group">
                             <input
                               class="floating-input form-control"
                               type="email"
-                              placeholder=" "
+                              name="email"
+                              id="email_id"
+                              placeholder="Enter email.."
                             />
-                            <label>Email</label>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="floating-label form-group">
-                            <input
-                              class="floating-input form-control"
-                              type="text"
-                              placeholder=" "
-                            />
-                            <label>Phone No.</label>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="floating-label form-group">
-                            <input
-                              class="floating-input form-control"
-                              type="password"
-                              placeholder=" "
-                            />
-                            <label>Password</label>
-                          </div>
-                        </div>
-                        <div class="col-lg-6">
-                          <div class="floating-label form-group">
-                            <input
-                              class="floating-input form-control"
-                              type="password"
-                              placeholder=" "
-                            />
-                            <label>Confirm Password</label>
                           </div>
                         </div>
                         <div class="col-lg-12">
-                          <div class="custom-control custom-checkbox mb-3">
+                          <div class="floating-label form-group">
                             <input
-                              type="checkbox"
-                              class="custom-control-input"
-                              id="customCheck1"
+                              class="floating-input form-control"
+                              type="password"
+                              placeholder="Enter password"
+                              name="password1"
+                              id="password1_id"
                             />
-                            <label
-                              class="custom-control-label text-white"
-                              for="customCheck1"
-                              >I agree with the terms of use</label
-                            >
+                          </div>
+                        </div>
+                        <div class="col-lg-12">
+                          <div class="floating-label form-group">
+                            <input
+                              class="floating-input form-control"
+                              type="password"
+                              name="password2"
+                              id="password2_id"
+                              placeholder="Confirm Password"
+                            />
                           </div>
                         </div>
                       </div>
@@ -97,7 +70,7 @@
                       <p class="mt-3">
                         Already have an Account
                         <a
-                          href="auth-sign-in.html"
+                          href="{% url 'accounts:login' %}"
                           class="text-white text-underline"
                           >Sign In</a
                         >
