@@ -1,0 +1,59 @@
+{% load static %} {% load humanize %}
+
+<div class="container">
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card">
+        <div class="card-header">Bookmarks</div>
+        <div class="card-body table-responsive">
+          <table class="table table-bordered">
+            <thead>
+              <tr>
+                <td>Serial No.</td>
+                <td>Title</td>
+                <td>Date</td>
+              </tr>
+            </thead>
+            <tbody>
+              {% for bookmark in bookmarks %}
+              <tr>
+                <td>{{ bookmarks.start_index|add:forloop.counter0 }}</td>
+                <td>
+                  <a href="{{bookmark.url}}" class="text-area">
+                    {{bookmark.title|title}}
+                  </a>
+                </td>
+                <td>{{bookmark.created_at|naturalday}}</td>
+              </tr>
+              {% endfor %}
+            </tbody>
+          </table>
+        </div>
+        <div class="card-footer">
+          <div class="d-flex justify-content-between">
+            <span class="step-links">
+              {% if bookmarks.has_previous %}
+              <a
+                href="?page={{bookmarks.previous_page_number}}"
+                class="btn btn-outline-primary font-weight-600"
+                >Previou Page</a
+              >
+              {% endif %} {% if bookmarks.has_next %}
+              <a
+                href="?page={{ bookmarks.next_page_number }}"
+                class="btn btn-outline-primary font-weight-600"
+                >Next Page</a
+              >
+              {% endif %}
+            </span>
+            <span class="btn btn-outline-primary">
+              Current Page - {{bookmarks.number}} of
+              {{bookmarks.paginator.num_pages}}
+              <br />
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

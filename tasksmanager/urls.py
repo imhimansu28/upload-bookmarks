@@ -25,6 +25,7 @@ urlpatterns = [
     path("admin/", admin.site.urls),
     path("", views.create_user, name="create_user"),
     path("", include("accounts.urls")),
+    path("bookmark/", include("bookmark.urls")),
 ]
 
 if settings.DEBUG:
