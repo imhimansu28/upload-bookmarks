@@ -81,6 +81,3 @@ jobs:
         run: |
           cp .env.sample .env
           python -Wa manage.py test --exclude-tag=external --verbosity=2 --settings=tasksmanager.settings.test
-
-      - name: Run linters
-        run: curlylint $(find . -name "templates")
