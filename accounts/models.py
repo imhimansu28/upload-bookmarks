@@ -1,3 +1,4 @@
+from django.conf import settings
 from django.contrib.auth.models import AbstractUser, BaseUserManager
 from django.db import models
 from django.utils import timezone
@@ -49,3 +50,34 @@ class UserBase(AbstractUser):
 
     def has_module_perms(self, app_label):
         return True
+
+
+class UserProfile(models.Model):
+    user = models.OneToOneField(
+        settings.AUTH_USER_MODEL,
+        verbose_name=("profile"),
+        on_delete=models.CASCADE,
+    )
+    profile_image = models.FileField(
+        upload_to="media/user/profie/",
+        blank=True,
+    )
+    cover_image = models.FileField(
+        upload_to="media/user/cover/",
+        blank=True,
+    )
+    address = models.TextField(default="")
+    secondary_education = models.CharField(max_length=150, blank=True)
+    higher_education = models.CharField(max_length=150, blank=True)
+    graduation = models.BooleanField(
+        default=False,
+    )
+    aboutus = models.TextField(default="")
+    specilization = models.CharField(default="", max_length=150)
+    github = models.URLField(blank=True)
+    linkedIn = models.URLField(blank=True)
+    facebook = models.URLField(blank=True)
+    instagram = models.URLField(blank=True)
+
+    def __str__(self):
+        return self.user.username

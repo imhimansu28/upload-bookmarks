@@ -1,8 +1,9 @@
 from django.contrib.auth import authenticate, login, logout
 from django.contrib.auth.decorators import login_required
+from django.contrib.auth.forms import AuthenticationForm
 from django.shortcuts import redirect, render
 
-from .forms import AccountCreationForm, LoginForm
+from .forms import AccountCreationForm
 from .models import UserBase
 
 
@@ -22,17 +23,18 @@ def create_user(request):
 
 def signin(request):
     if request.method == "POST":
-        form = LoginForm(request, data=request.POST)
-        # validate email and password
+        form = AuthenticationForm(request=request, data=request.POST)
         if form.is_valid():
             username = form.cleaned_data.get("username")
             password = form.cleaned_data.get("password")
-            user = authenticate(username=username, password=password)
+            user = authenticate(
+                request=request, username=username, password=password
+            )
             if user is not None:
                 login(request, user)
                 return redirect("accounts:view_profile")
     else:
-        form = LoginForm()
+        form = AuthenticationForm()
     context = {"form": form}
     return render(request, "login.html", context)
 

@@ -1,7 +1,5 @@
 from django import forms
 from django.contrib.auth import get_user_model
-from django.contrib.auth.forms import AuthenticationForm
-from django.contrib.auth.models import User
 
 
 class AccountCreationForm(forms.ModelForm):
@@ -29,16 +27,3 @@ class AccountCreationForm(forms.ModelForm):
         if commit:
             user.save()
         return user
-
-
-class LoginForm(AuthenticationForm):
-    password = forms.CharField(label="Password", widget=forms.PasswordInput)
-
-    class Meta:
-        model = User
-        fields = ("email", "password")
-
-    def __init__(self, *args, **kwargs):
-        super(LoginForm, self).__init__(*args, **kwargs)
-        for visible in self.visible_fields():
-            visible.field.widget.attrs["class"] = "form-control"
