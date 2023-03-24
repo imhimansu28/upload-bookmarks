@@ -1,10 +1,18 @@
+import environ
+
 from .base import *  # noqa
+
+env = environ.Env()
+
+# reading .env file
+environ.Env.read_env()
 
 DEBUG = True
 ALLOWED_HOSTS = [
     "127.0.0.1",
 ]
 INTERNAL_IPS = ["127.0.0.1"]
+SITE_URL = "127.0.0.1:8080"
 
 # EMAIL CONFIGURATION
 # See: https://docs.djangoproject.com/en/dev/ref/settings/#email-backend
@@ -32,3 +40,10 @@ INSTALLED_APPS += [  # noqa
 MIDDLEWARE = [
     "debug_toolbar.middleware.DebugToolbarMiddleware",
 ] + MIDDLEWARE  # noqa
+
+EMAIL_HOST = env("EMAIL_HOST")
+EMAIL_PORT = env("EMAIL_PORT")
+EMAIL_USE_TLS = env("EMAIL_USE_TLS")
+EMAIL_HOST_USER = env("EMAIL_HOST_USER")
+EMAIL_HOST_PASSWORD = env("EMAIL_HOST_PASSWORD")
+DEFAULT_FROM_EMAIL = env("DEFAULT_FROM_EMAIL")

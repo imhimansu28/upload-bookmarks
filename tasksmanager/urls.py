@@ -16,16 +16,28 @@ Including another URLconf
 from django.conf import settings
 from django.conf.urls.static import static
 from django.contrib import admin
+from django.contrib.auth import views as password_view
 from django.urls import include, path
 
-from accounts import views
+from accounts import views as accountviews
 
 urlpatterns = [
     # render index.html on /
     path("admin/", admin.site.urls),
-    path("", views.create_user, name="create_user"),
+    path("", accountviews.create_user, name="create_user"),
     path("", include("accounts.urls")),
     path("bookmark/", include("bookmark.urls")),
+]
+
+
+urlpatterns += [
+    # other URL patterns
+    path(
+        "reset/<uidb64>/<token>/",
+        password_view.PasswordResetConfirmView.as_view(),
+        name="password_reset_confirm",
+    ),
+    # other URL patterns
 ]
 
 if settings.DEBUG:
