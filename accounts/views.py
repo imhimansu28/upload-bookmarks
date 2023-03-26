@@ -22,6 +22,7 @@ def create_user(request):
             profile = UserProfile.objects.create(user=user)
             profile.save()
             login(request, user)
+            messages.success(request, "Register successful !")
             return redirect(
                 "accounts:view_profile"
             )  # change "accounts:login" to your home page URL
@@ -42,6 +43,7 @@ def signin(request):
             )
             if user is not None:
                 login(request, user)
+                messages.success(request, "Login successful !")
                 return redirect("accounts:view_profile")
     else:
         form = AuthenticationForm()
