@@ -8,7 +8,7 @@ aiohttp==3.8.1
     # via geoip2
 aiosignal==1.2.0
     # via aiohttp
-asgiref==3.5.1
+asgiref==3.6.0
     # via django
 asttokens==2.0.5
     # via stack-data
@@ -26,7 +26,7 @@ charset-normalizer==2.0.12
     #   requests
 decorator==5.1.1
     # via ipython
-django==4.0.10
+django==4.1.7
     # via -r requirements.in
 django-environ==0.10.0
     # via -r requirements.in
