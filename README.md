@@ -48,10 +48,3 @@ python manage.py migrate
 # Start development server
 python manage.py runserver
 ```
-
-
-## Deployment
-
-```bash
-git push live
-```
