@@ -23565,3 +23565,9 @@ ul.iq-contact-rest li a p {
 
 .data-table .badge {
   padding: 8px 10px; }
+
+.icon-image{
+  width:25px;
+  height: 25px;
+  max-width: 100%;
+}

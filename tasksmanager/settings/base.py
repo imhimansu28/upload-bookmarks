@@ -62,6 +62,7 @@ INSTALLED_APPS = [
     "django.contrib.humanize",
     "bookmark",
     "accounts",
+    "world",
     "teams",
     "ipl",
     "ipl2022",
