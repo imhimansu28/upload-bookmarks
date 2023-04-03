@@ -42,7 +42,7 @@ idna==3.3
     # via
     #   requests
     #   yarl
-ipython==8.11.0
+ipython==8.12.0
     # via -r requirements.in
 jedi==0.18.1
     # via ipython
