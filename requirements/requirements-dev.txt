@@ -7,7 +7,7 @@ pip-tools==6.12.3
 flake8==6.0.0
 black==23.3.0
 curlylint
-pre-commit==3.2.1
+pre-commit==3.2.2
 
 # for debugging
 django-debug-toolbar==3.8.1
