@@ -78,7 +78,7 @@ requests==2.27.1
     # via geoip2
 six==1.16.0
     # via asttokens
-sqlparse==0.4.2
+sqlparse==0.4.4
     # via
     #   -r requirements.in
     #   django
