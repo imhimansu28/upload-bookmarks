@@ -10,7 +10,7 @@ django-environ==0.10.0
 
 # Django
 pytz==2023.3
-geoip2==4.6.0
+geoip2==4.7.0
 
 # Run the following after updating this file:
 #    pip-compile --output-file=requirements/requirements.txt requirements/requirements.in
