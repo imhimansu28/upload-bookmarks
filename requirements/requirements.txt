@@ -74,7 +74,7 @@ pymemcache==4.0.0
     # via -r requirements.in
 pytz==2023.3
     # via -r requirements.in
-requests==2.27.1
+requests==2.31.0
     # via geoip2
 six==1.16.0
     # via asttokens
