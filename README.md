@@ -1,4 +1,3 @@
-# About tasksmanager
 # Bookmark Manager Documentation
 
 ## Introduction
