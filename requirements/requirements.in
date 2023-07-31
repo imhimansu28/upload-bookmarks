@@ -1,5 +1,5 @@
 django==4.2.3
-uwsgi==2.0.21
+uwsgi==2.0.22
 ipython==8.14.0
 mysqlclient==2.2.0
 sqlparse==0.4.4
