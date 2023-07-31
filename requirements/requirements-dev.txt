@@ -4,7 +4,7 @@
 pip-tools==7.1.0
 
 # for linting
-flake8==6.0.0
+flake8==6.1.0
 black==23.7.0
 curlylint
 pre-commit==3.3.3
