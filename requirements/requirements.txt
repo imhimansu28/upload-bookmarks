@@ -54,7 +54,7 @@ multidict==6.0.2
     # via
     #   aiohttp
     #   yarl
-mysqlclient==2.2.0
+mysqlclient==2.2.1
     # via -r requirements.in
 parso==0.8.3
     # via jedi
@@ -90,7 +90,7 @@ traitlets==5.1.1
     #   matplotlib-inline
 urllib3==1.26.9
     # via requests
-uwsgi==2.0.22
+uwsgi==2.0.23
     # via -r requirements.in
 wcwidth==0.2.5
     # via prompt-toolkit
