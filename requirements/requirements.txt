@@ -4,7 +4,7 @@
 #
 #    pip-compile --output-file=requirements/requirements.txt requirements/requirements.in
 #
-aiohttp==3.8.5
+aiohttp==3.9.0
     # via geoip2
 aiosignal==1.2.0
     # via aiohttp
@@ -21,9 +21,7 @@ backcall==0.2.0
 certifi==2023.7.22
     # via requests
 charset-normalizer==2.0.12
-    # via
-    #   aiohttp
-    #   requests
+    # via requests
 decorator==5.1.1
     # via ipython
 django==4.2.7
