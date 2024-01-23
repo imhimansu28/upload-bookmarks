@@ -8,7 +8,7 @@ aiohttp==3.8.5
     # via geoip2
 aiosignal==1.2.0
     # via aiohttp
-asgiref==3.6.0
+asgiref==3.7.2
     # via django
 asttokens==2.0.5
     # via stack-data
@@ -26,7 +26,7 @@ charset-normalizer==2.0.12
     #   requests
 decorator==5.1.1
     # via ipython
-django==4.2.7
+django==5.0.1
     # via -r requirements.in
 django-environ==0.11.2
     # via -r requirements.in
@@ -88,6 +88,8 @@ traitlets==5.1.1
     # via
     #   ipython
     #   matplotlib-inline
+typing-extensions==4.9.0
+    # via asgiref
 urllib3==1.26.9
     # via requests
 uwsgi==2.0.22
