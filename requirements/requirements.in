@@ -9,7 +9,7 @@ pymemcache==4.0.0
 django-environ==0.11.2
 
 # Django
-pytz==2023.3
+pytz==2024.1
 geoip2==4.8.0
 
 # Run the following after updating this file:
