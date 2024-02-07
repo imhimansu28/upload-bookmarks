@@ -1,4 +1,4 @@
-django==5.0.1
+django==5.0.2
 uwsgi==2.0.22
 ipython==8.21.0
 mysqlclient==2.2.1
