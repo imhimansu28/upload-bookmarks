@@ -40,7 +40,7 @@ idna==3.3
     # via
     #   requests
     #   yarl
-ipython==8.21.0
+ipython==8.22.1
     # via -r requirements.in
 jedi==0.18.1
     # via ipython
@@ -80,7 +80,7 @@ sqlparse==0.4.4
     #   django
 stack-data==0.2.0
     # via ipython
-traitlets==5.1.1
+traitlets==5.14.1
     # via
     #   ipython
     #   matplotlib-inline
