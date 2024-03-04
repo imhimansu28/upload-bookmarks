@@ -15,4 +15,4 @@ ipdb==0.13.13
 
 # for tests
 factory-boy==3.3.0
-time-machine==2.13.0
+time-machine==2.14.0
