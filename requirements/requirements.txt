@@ -40,7 +40,7 @@ idna==3.3
     # via
     #   requests
     #   yarl
-ipython==8.22.2
+ipython==8.23.0
     # via -r requirements.in
 jedi==0.18.1
     # via ipython
@@ -85,7 +85,9 @@ traitlets==5.14.1
     #   ipython
     #   matplotlib-inline
 typing-extensions==4.9.0
-    # via asgiref
+    # via
+    #   asgiref
+    #   ipython
 urllib3==1.26.9
     # via requests
 uwsgi==2.0.24
