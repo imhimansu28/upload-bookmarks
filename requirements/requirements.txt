@@ -90,7 +90,7 @@ typing-extensions==4.9.0
     #   ipython
 urllib3==1.26.9
     # via requests
-uwsgi==2.0.24
+uwsgi==2.0.25
     # via -r requirements.in
 wcwidth==0.2.5
     # via prompt-toolkit
