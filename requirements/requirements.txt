@@ -22,7 +22,7 @@ charset-normalizer==2.0.12
     # via requests
 decorator==5.1.1
     # via ipython
-django==5.0.4
+django==5.0.6
     # via -r requirements.in
 django-environ==0.11.2
     # via -r requirements.in
